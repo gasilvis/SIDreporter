@@ -10,6 +10,7 @@
 #include <ComCtrls.hpp>
 #include <HttpProt.hpp>
 #include "ElastFrm.hpp"
+#include "FtpCli.hpp"
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -21,6 +22,7 @@ __published:	// IDE-managed Components
    TLabel *versionLabel;
    THttpCli *HttpCli1;
    TElasticForm *ElasticForm1;
+   TFtpClient *FtpClient1;
    void __fastcall FormCreate(TObject *Sender);
    void __fastcall HttpCli1DocBegin(TObject *Sender);
    void __fastcall HttpCli1DocEnd(TObject *Sender);
@@ -28,6 +30,7 @@ __published:	// IDE-managed Components
 private:	// User declarations
 public:		// User declarations
    bool __fastcall TForm1::httpGet(AnsiString URL, char* buffer, int bufsize);
+   short __fastcall TForm1::getFlareData(int yr, int mo, int day);
    __fastcall TForm1(TComponent* Owner);
 };
 //---------------------------------------------------------------------------

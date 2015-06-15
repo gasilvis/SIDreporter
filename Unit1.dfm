@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 288
-  Top = 134
+  Left = 429
+  Top = 166
   Width = 979
   Height = 563
   HorzScrollBar.Visible = False
@@ -29,8 +29,8 @@ object Form1: TForm1
       Caption = 'General'
       object versionLabel: TLabel
         Tag = 1
-        Left = 312
-        Top = 32
+        Left = 280
+        Top = 16
         Width = 110
         Height = 23
         Caption = 'versionLabel'
@@ -74,15 +74,32 @@ object Form1: TForm1
     DesignFormHeight = 563
     DesignFormClientWidth = 971
     DesignFormClientHeight = 530
-    DesignFormLeft = 288
-    DesignFormTop = 134
+    DesignFormLeft = 429
+    DesignFormTop = 166
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -20
     Font.Name = 'Arial'
     Font.Style = []
     Version = 700
-    Left = 84
-    Top = 258
+    Left = 884
+    Top = 170
+  end
+  object FtpClient1: TFtpClient
+    Timeout = 15
+    MultiThreaded = False
+    Port = 'ftp'
+    DataPortRangeStart = 0
+    DataPortRangeEnd = 0
+    LocalAddr = '0.0.0.0'
+    UserName = 'anonymous'
+    PassWord = 'George@GASilvis.net'
+    DisplayFileFlag = False
+    Binary = False
+    ShareMode = ftpShareExclusive
+    Options = [ftpAcceptLF, ftpWaitUsingSleep]
+    ConnectionType = ftpDirect
+    Left = 268
+    Top = 547
   end
 end
